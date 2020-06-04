@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="11" tests="9" time="0.233">
+ <testsuite name="Rest API" timestamp="2020-06-04T13:13:24" hostname="localhost" time="0.044" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="Rest API.Getting an invalid user&apos;s step data" timestamp="2020-06-04T13:13:24" hostname="localhost" time="0.039" errors="0" tests="2" skipped="0" disabled="0" failures="4">
+  <testcase classname="Rest API.Getting an invalid user&apos;s step data" name="returns 404" time="0.029">
+   <failure type="exception" message="TypeError: Cannot read property &apos;close&apos; of undefined"><![CDATA[at <Jasmine>
+    at UserContext.afterEach (/home/amador/proyectos/node/spec/rest-api.spec.js:21:13)
+    at <Jasmine>
+    at Request.request.get [as _callback] (/home/amador/proyectos/node/spec/rest-api.spec.js:30:9)
+    at Request.self.callback (/home/amador/proyectos/node/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.<anonymous> (/home/amador/proyectos/node/node_modules/request/request.js:1154:10)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Rest API.Getting an invalid user&apos;s step data" name="returns 404 with expected payload" time="0.006">
+   <failure type="exception" message="Uncaught exception: Error: listen EADDRINUSE: address already in use :::8080"><![CDATA[error properties: Object({ code: 'EADDRINUSE', errno: 'EADDRINUSE', syscall: 'listen', address: '::', port: 8080 })
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (net.js:1280:14)
+    at listenInCluster (net.js:1328:12)
+    at Server.listen (net.js:1415:7)
+    at Function.listen (/home/amador/proyectos/node/node_modules/express/lib/application.js:618:24)
+    at module.exports (/home/amador/proyectos/node/src/rest-api.js:14:22)
+    at UserContext.beforeEach (/home/amador/proyectos/node/spec/rest-api.spec.js:16:15)
+    at <Jasmine>]]>
+   </failure>
+   <failure type="exception" message="Uncaught exception: SyntaxError: Unexpected token &lt; in JSON at position 0"><![CDATA[at <Jasmine>
+    at Request.request.get [as _callback] (/home/amador/proyectos/node/spec/rest-api.spec.js:36:31)
+    at Request.self.callback (/home/amador/proyectos/node/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.<anonymous> (/home/amador/proyectos/node/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:198:13)
+    at IncomingMessage.<anonymous> (/home/amador/proyectos/node/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:286:20)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)]]>
+   </failure>
+   <failure type="exception" message="TypeError: Cannot read property &apos;close&apos; of undefined"><![CDATA[at <Jasmine>
+    at UserContext.afterEach (/home/amador/proyectos/node/spec/rest-api.spec.js:21:13)
+    at <Jasmine>
+    at process.emit (events.js:198:13)
+    at process._fatalException (internal/bootstrap/node.js:497:27)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Rest API.Getting a valid user&apos;s step data" timestamp="2020-06-04T13:13:24" hostname="localhost" time="0.004" errors="0" tests="1" skipped="0" disabled="0" failures="3">
+  <testcase classname="Rest API.Getting a valid user&apos;s step data" name="returns 200 with expected step count" time="0.002">
+   <failure type="exception" message="Uncaught exception: Error: listen EADDRINUSE: address already in use :::8080"><![CDATA[error properties: Object({ code: 'EADDRINUSE', errno: 'EADDRINUSE', syscall: 'listen', address: '::', port: 8080 })
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (net.js:1280:14)
+    at listenInCluster (net.js:1328:12)
+    at Server.listen (net.js:1415:7)
+    at Function.listen (/home/amador/proyectos/node/node_modules/express/lib/application.js:618:24)
+    at module.exports (/home/amador/proyectos/node/src/rest-api.js:14:22)
+    at UserContext.beforeEach (/home/amador/proyectos/node/spec/rest-api.spec.js:16:15)
+    at <Jasmine>]]>
+   </failure>
+   <failure type="exception" message="Uncaught exception: SyntaxError: Unexpected token &lt; in JSON at position 0"><![CDATA[at <Jasmine>
+    at Request.request.get [as _callback] (/home/amador/proyectos/node/spec/rest-api.spec.js:48:31)
+    at Request.self.callback (/home/amador/proyectos/node/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.<anonymous> (/home/amador/proyectos/node/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:198:13)
+    at IncomingMessage.<anonymous> (/home/amador/proyectos/node/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:286:20)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)]]>
+   </failure>
+   <failure type="exception" message="TypeError: Cannot read property &apos;close&apos; of undefined"><![CDATA[at <Jasmine>
+    at UserContext.afterEach (/home/amador/proyectos/node/spec/rest-api.spec.js:21:13)
+    at <Jasmine>
+    at process.emit (events.js:198:13)
+    at process._fatalException (internal/bootstrap/node.js:497:27)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Step Service" timestamp="2020-06-04T13:13:24" hostname="localhost" time="0.01" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="Step Service.Getting user" timestamp="2020-06-04T13:13:24" hostname="localhost" time="0.004" errors="0" tests="2" skipped="0" disabled="0" failures="1">
+  <testcase classname="Step Service.Getting user" name="returns step data for existing user" time="0.002" />
+  <testcase classname="Step Service.Getting user" name="returns undefined for nonexistent user" time="0.002">
+   <failure type="toEqual" message="Expected Function to equal undefined."><![CDATA[Error: Expected Function to equal undefined.
+    at <Jasmine>
+    at UserContext.it (/home/amador/proyectos/node/spec/step.service.spec.js:25:50)
+    at <Jasmine>]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Step Service.Adding 5 steps" timestamp="2020-06-04T13:13:24" hostname="localhost" time="0.005" errors="0" tests="2" skipped="0" disabled="0" failures="2">
+  <testcase classname="Step Service.Adding 5 steps" name="is successful when user already exists" time="0.002">
+   <failure type="toEqual" message="Expected 12323 to equal 12328."><![CDATA[Error: Expected 12323 to equal 12328.
+    at <Jasmine>
+    at UserContext.it (/home/amador/proyectos/node/spec/step.service.spec.js:33:56)
+    at <Jasmine>]]>
+   </failure>
+  </testcase>
+  <testcase classname="Step Service.Adding 5 steps" name="is successful when user didn&apos;t previously exist" time="0.002">
+   <failure type="exception" message="TypeError: Cannot read property &apos;cumulativeSteps&apos; of undefined"><![CDATA[at <Jasmine>
+    at UserContext.it (/home/amador/proyectos/node/spec/step.service.spec.js:39:38)
+    at <Jasmine>
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="WebSocket API" timestamp="2020-06-04T13:13:24" hostname="localhost" time="0.064" errors="0" tests="0" skipped="0" disabled="0" failures="0">
+ </testsuite>
+ <testsuite name="WebSocket API.Opening a websocket connection to the server" timestamp="2020-06-04T13:13:24" hostname="localhost" time="0.008" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="WebSocket API.Opening a websocket connection to the server" name="successfully establishes a connection" time="0.007" />
+ </testsuite>
+ <testsuite name="WebSocket API.Sending an update for an existing user" timestamp="2020-06-04T13:13:24" hostname="localhost" time="0.055" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="WebSocket API.Sending an update for an existing user" name="properly updates the user&apos;s step count" time="0.054">
+   <failure type="toEqual" message="Expected 12323 to equal 12334."><![CDATA[Error: Expected 12323 to equal 12334.
+    at <Jasmine>
+    at Timeout.setTimeout [as _onTimeout] (/home/amador/proyectos/node/spec/wsServer-api.spec.js:53:62)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>
